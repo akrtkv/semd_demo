@@ -4,7 +4,7 @@ import com.sun.xml.bind.marshaller.NamespacePrefixMapper;
 import org.springframework.stereotype.Component;
 
 @Component
-public class IemkNamespaceMapper extends NamespacePrefixMapper {
+public class SemdNamespaceMapper extends NamespacePrefixMapper {
 
     private static final String FIAS_PREFIX = "fias";
 

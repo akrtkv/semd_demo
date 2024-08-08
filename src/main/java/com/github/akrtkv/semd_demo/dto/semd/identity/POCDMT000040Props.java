@@ -7,7 +7,7 @@
 
 package com.github.akrtkv.semd_demo.dto.semd.identity;
 
-import su.medsoft.rir.recipe.dto.iemk_new_edition.ST;
+import com.github.akrtkv.semd_demo.dto.semd.ST;
 
 import javax.xml.bind.annotation.*;
 import java.util.ArrayList;

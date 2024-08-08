@@ -6,4 +6,4 @@
 //
 
 @javax.xml.bind.annotation.XmlSchema(namespace = "http://egisz.rosminzdrav.ru")
-package su.medsoft.rir.recipe.dto.egisz.request;
+package com.github.akrtkv.semd_demo.dto.egisz.request;

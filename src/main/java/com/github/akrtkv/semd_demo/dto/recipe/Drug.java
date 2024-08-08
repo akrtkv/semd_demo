@@ -1,10 +1,10 @@
-package su.medsoft.rir.recipe.dto.rir.recipe;
+package com.github.akrtkv.semd_demo.dto.recipe;
 
 import com.fasterxml.jackson.annotation.JsonFormat;
 import io.swagger.v3.oas.annotations.media.Schema;
+import jakarta.validation.constraints.NotEmpty;
+import jakarta.validation.constraints.NotNull;
 
-import javax.validation.constraints.NotEmpty;
-import javax.validation.constraints.NotNull;
 import java.math.BigDecimal;
 import java.time.LocalDate;
 import java.util.Objects;
@@ -235,31 +235,6 @@ public class Drug {
 
     public void setPeriodName(String periodName) {
         this.periodName = periodName;
-    }
-
-    @Override
-    public String toString() {
-        return "Drug{" +
-                "id=" + id +
-                ", durationDays=" + durationDays +
-                ", releaseDate=" + releaseDate +
-                ", codeMnn='" + codeMnn + '\'' +
-                ", codeKlp='" + codeKlp + '\'' +
-                ", tradeName='" + tradeName + '\'' +
-                ", name='" + name + '\'' +
-                ", routeCode=" + routeCode +
-                ", routeName='" + routeName + '\'' +
-                ", packAmount=" + packAmount +
-                ", price=" + price +
-                ", dose=" + dose +
-                ", singleDose=" + singleDose +
-                ", singleDoseCode=" + singleDoseCode +
-                ", singleDoseName='" + singleDoseName + '\'' +
-                ", period=" + period +
-                ", periodUnit='" + periodUnit + '\'' +
-                ", periodCode='" + periodCode + '\'' +
-                ", periodName='" + periodName + '\'' +
-                '}';
     }
 
     @Override

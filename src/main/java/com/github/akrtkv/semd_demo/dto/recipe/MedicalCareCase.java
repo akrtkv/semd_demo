@@ -1,13 +1,13 @@
-package su.medsoft.rir.recipe.dto.rir.recipe;
+package com.github.akrtkv.semd_demo.dto.recipe;
 
 import com.fasterxml.jackson.databind.annotation.JsonDeserialize;
 import com.fasterxml.jackson.databind.annotation.JsonSerialize;
+import com.github.akrtkv.semd_demo.util.ZonedDateTimeDeserializer;
+import com.github.akrtkv.semd_demo.util.ZonedDateTimeSerializer;
 import io.swagger.v3.oas.annotations.media.Schema;
-import su.medsoft.rir.recipe.utils.ZonedDateTimeDeserializer;
-import su.medsoft.rir.recipe.utils.ZonedDateTimeSerializer;
+import jakarta.validation.constraints.NotEmpty;
+import jakarta.validation.constraints.NotNull;
 
-import javax.validation.constraints.NotEmpty;
-import javax.validation.constraints.NotNull;
 import java.time.ZonedDateTime;
 
 public class MedicalCareCase {
@@ -72,16 +72,5 @@ public class MedicalCareCase {
 
     public void setEndDate(ZonedDateTime endDate) {
         this.endDate = endDate;
-    }
-
-    @Override
-    public String toString() {
-        return "MedicalCareCase{" +
-                "id=" + id +
-                ", misId=" + misId +
-                ", medicalCardNumber='" + medicalCardNumber + '\'' +
-                ", beginDate=" + beginDate +
-                ", endDate=" + endDate +
-                '}';
     }
 }

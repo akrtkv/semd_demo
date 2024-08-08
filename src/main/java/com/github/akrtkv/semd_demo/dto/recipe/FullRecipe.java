@@ -1,6 +1,5 @@
-package su.medsoft.rir.recipe.dto.rir.recipe;
+package com.github.akrtkv.semd_demo.dto.recipe;
 
-import com.fasterxml.jackson.annotation.JsonInclude;
 import io.swagger.v3.oas.annotations.media.Schema;
 
 import java.util.List;
@@ -8,17 +7,13 @@ import java.util.List;
 public class FullRecipe extends Recipe {
 
     @Schema(description = "Для льготного рецепта")
-    @JsonInclude(JsonInclude.Include.NON_NULL)
     private Drug drug;
 
     @Schema(description = "Для обычного рецепта")
-    @JsonInclude(JsonInclude.Include.NON_NULL)
     private List<Drug> drugs;
 
-    @JsonInclude(JsonInclude.Include.NON_NULL)
     private HealthFood healthFood;
 
-    @JsonInclude(JsonInclude.Include.NON_NULL)
     private MedicalProduct medicalProduct;
 
     public Drug getDrug() {
@@ -51,15 +46,5 @@ public class FullRecipe extends Recipe {
 
     public void setMedicalProduct(MedicalProduct medicalProduct) {
         this.medicalProduct = medicalProduct;
-    }
-
-    @Override
-    public String toString() {
-        return "FullRecipe{" +
-                "drug=" + drug +
-                ", drugs=" + drugs +
-                ", healthFood=" + healthFood +
-                ", medicalProduct=" + medicalProduct +
-                '}';
     }
 }

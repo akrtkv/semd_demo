@@ -7,8 +7,8 @@
 
 package com.github.akrtkv.semd_demo.dto.semd;
 
-import su.medsoft.rir.recipe.dto.iemk_new_edition.address.Type;
-import su.medsoft.rir.recipe.dto.iemk_new_edition.fias.FiasAddress;
+import com.github.akrtkv.semd_demo.dto.semd.address.Type;
+import com.github.akrtkv.semd_demo.dto.semd.fias.FiasAddress;
 
 import javax.xml.bind.annotation.*;
 import java.util.ArrayList;

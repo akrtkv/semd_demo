@@ -5,7 +5,7 @@
 // Generated on: 2021.05.26 at 02:54:49 PM MSK
 //
 
-package su.medsoft.rir.recipe.dto.egisz.recipe;
+package com.github.akrtkv.semd_demo.dto.egisz.recipe;
 
 import javax.xml.bind.annotation.XmlRegistry;
 

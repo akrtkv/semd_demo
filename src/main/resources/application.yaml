@@ -1,1 +1,10 @@
-spring.application.name=semd_demo
+server:
+  port: 8080
+  servlet:
+    context-path: /semd_demo
+
+springdoc:
+  swagger-ui:
+    path: /swagger-ui.html
+  api-docs:
+    path: /api-docs

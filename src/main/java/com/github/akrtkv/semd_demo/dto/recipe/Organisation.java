@@ -1,11 +1,10 @@
-package su.medsoft.rir.recipe.dto.rir.recipe;
+package com.github.akrtkv.semd_demo.dto.recipe;
 
+import com.github.akrtkv.semd_demo.dto.Address;
 import io.swagger.v3.oas.annotations.media.Schema;
-import su.medsoft.rir.recipe.dto.rir.Address;
-
-import javax.validation.Valid;
-import javax.validation.constraints.NotEmpty;
-import javax.validation.constraints.NotNull;
+import jakarta.validation.Valid;
+import jakarta.validation.constraints.NotEmpty;
+import jakarta.validation.constraints.NotNull;
 
 public class Organisation {
 
@@ -53,15 +52,5 @@ public class Organisation {
 
     public void setAddress(Address address) {
         this.address = address;
-    }
-
-    @Override
-    public String toString() {
-        return "Organisation{" +
-                "id=" + id +
-                ", oid='" + oid + '\'' +
-                ", name='" + name + '\'' +
-                ", address=" + address +
-                '}';
     }
 }

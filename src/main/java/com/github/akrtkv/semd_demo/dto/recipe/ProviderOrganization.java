@@ -1,6 +1,6 @@
-package su.medsoft.rir.recipe.dto.rir.recipe;
+package com.github.akrtkv.semd_demo.dto.recipe;
 
-import javax.validation.constraints.NotEmpty;
+import jakarta.validation.constraints.NotEmpty;
 
 public class ProviderOrganization extends Organisation {
 
@@ -24,13 +24,5 @@ public class ProviderOrganization extends Organisation {
 
     public void setPhone(String phone) {
         this.phone = phone;
-    }
-
-    @Override
-    public String toString() {
-        return "ProviderOrganization{" +
-                "ogrn='" + ogrn + '\'' +
-                ", phone='" + phone + '\'' +
-                '}';
     }
 }

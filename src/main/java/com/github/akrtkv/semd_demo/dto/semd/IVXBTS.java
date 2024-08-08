@@ -7,7 +7,7 @@
 
 package com.github.akrtkv.semd_demo.dto.semd;
 
-import su.medsoft.rir.recipe.dto.iemk_new_edition.identity.EffectiveTime;
+import com.github.akrtkv.semd_demo.dto.semd.identity.EffectiveTime;
 
 import javax.xml.bind.annotation.XmlAccessType;
 import javax.xml.bind.annotation.XmlAccessorType;

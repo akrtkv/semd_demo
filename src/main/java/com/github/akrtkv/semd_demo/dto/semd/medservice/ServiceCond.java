@@ -7,7 +7,7 @@
 
 package com.github.akrtkv.semd_demo.dto.semd.medservice;
 
-import su.medsoft.rir.recipe.dto.iemk_new_edition.CENonElements;
+import com.github.akrtkv.semd_demo.dto.semd.CENonElements;
 
 import javax.xml.bind.annotation.XmlAccessType;
 import javax.xml.bind.annotation.XmlAccessorType;

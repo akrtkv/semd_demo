@@ -1,10 +1,10 @@
-package su.medsoft.rir.recipe.dto.rir.recipe;
+package com.github.akrtkv.semd_demo.dto.recipe;
 
 import com.fasterxml.jackson.annotation.JsonFormat;
 import io.swagger.v3.oas.annotations.media.Schema;
+import jakarta.validation.constraints.NotEmpty;
+import jakarta.validation.constraints.NotNull;
 
-import javax.validation.constraints.NotEmpty;
-import javax.validation.constraints.NotNull;
 import java.math.BigDecimal;
 import java.time.LocalDate;
 
@@ -125,20 +125,5 @@ public class HealthFood {
 
     public void setPrice(BigDecimal price) {
         this.price = price;
-    }
-
-    @Override
-    public String toString() {
-        return "HealthFood{" +
-                "id=" + id +
-                ", releaseDate=" + releaseDate +
-                ", durationDays=" + durationDays +
-                ", code='" + code + '\'' +
-                ", name='" + name + '\'' +
-                ", routeCode=" + routeCode +
-                ", routeName='" + routeName + '\'' +
-                ", dose=" + dose +
-                ", price=" + price +
-                '}';
     }
 }

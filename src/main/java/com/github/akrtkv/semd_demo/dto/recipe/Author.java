@@ -1,4 +1,4 @@
-package su.medsoft.rir.recipe.dto.rir.recipe;
+package com.github.akrtkv.semd_demo.dto.recipe;
 
 public class Author extends Staff {
 
@@ -10,12 +10,5 @@ public class Author extends Staff {
 
     public void setPhone(String phone) {
         this.phone = phone;
-    }
-
-    @Override
-    public String toString() {
-        return "Author{" +
-                "phone='" + phone + '\'' +
-                '}';
     }
 }

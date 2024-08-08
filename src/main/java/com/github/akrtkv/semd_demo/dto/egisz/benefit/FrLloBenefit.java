@@ -1,4 +1,4 @@
-package su.medsoft.rir.recipe.dto.egisz.benefit;
+package com.github.akrtkv.semd_demo.dto.egisz.benefit;
 
 import javax.xml.bind.annotation.*;
 import javax.xml.datatype.XMLGregorianCalendar;

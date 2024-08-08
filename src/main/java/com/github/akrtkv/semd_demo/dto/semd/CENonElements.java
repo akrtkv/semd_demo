@@ -7,12 +7,12 @@
 
 package com.github.akrtkv.semd_demo.dto.semd;
 
-import su.medsoft.rir.recipe.dto.iemk_new_edition.address.ResidentCode;
-import su.medsoft.rir.recipe.dto.iemk_new_edition.address.Type;
-import su.medsoft.rir.recipe.dto.iemk_new_edition.identity.POCDMT000040DocInfo;
-import su.medsoft.rir.recipe.dto.iemk_new_edition.identity.POCDMT000040IdentityDoc;
-import su.medsoft.rir.recipe.dto.iemk_new_edition.identity.POCDMT000040InsurancePolicy;
-import su.medsoft.rir.recipe.dto.iemk_new_edition.medservice.DocType;
+import com.github.akrtkv.semd_demo.dto.semd.address.ResidentCode;
+import com.github.akrtkv.semd_demo.dto.semd.address.Type;
+import com.github.akrtkv.semd_demo.dto.semd.identity.POCDMT000040DocInfo;
+import com.github.akrtkv.semd_demo.dto.semd.identity.POCDMT000040IdentityDoc;
+import com.github.akrtkv.semd_demo.dto.semd.identity.POCDMT000040InsurancePolicy;
+import com.github.akrtkv.semd_demo.dto.semd.medservice.DocType;
 
 import javax.xml.bind.annotation.*;
 import javax.xml.bind.annotation.adapters.CollapsedStringAdapter;

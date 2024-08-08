@@ -1,38 +1,41 @@
 package com.github.akrtkv.semd_demo.ctrl;
 
-import com.github.akrtkv.semd_demo.service.IemkService;
+import com.github.akrtkv.semd_demo.dto.recipe.FullRecipe;
+import com.github.akrtkv.semd_demo.service.SemdService;
 import com.github.akrtkv.semd_demo.util.ApiPaths;
+import io.swagger.v3.oas.annotations.Operation;
 import jakarta.validation.Valid;
 import jakarta.validation.constraints.NotNull;
-import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.http.MediaType;
 import org.springframework.validation.annotation.Validated;
-import org.springframework.web.bind.annotation.*;
-import org.springframework.web.multipart.MultipartFile;
+import org.springframework.web.bind.annotation.PostMapping;
+import org.springframework.web.bind.annotation.RequestBody;
+import org.springframework.web.bind.annotation.RestController;
 
 @RestController
 @Validated
-public class IemkCtrl {
+public class SemdCtrl {
 
-    private final IemkService iemkService;
+    private final SemdService semdService;
 
-    @Autowired
-    public IemkCtrl(IemkService iemkService) {
-        this.iemkService = iemkService;
+    public SemdCtrl(SemdService semdService) {
+        this.semdService = semdService;
     }
 
-    @PostMapping(value = ApiPaths.CREATE_SEMD_DRUG)
-    public String createDrugPreferentialRecipe(@@RequestBody @Valid @NotNull DrugRecipe drugRecipe) {
-        return iemkService.createDrugPreferentialRecipe(drugRecipe);
+    @Operation(summary = "Льготный рецепт на лекарственный препарат")
+    @PostMapping(ApiPaths.CREATE_SEMD_DRUG)
+    public String createDrugPreferentialRecipe(@RequestBody @Valid @NotNull FullRecipe fullRecipe) {
+        return semdService.createDrugPreferentialRecipe(fullRecipe);
     }
 
-    @PostMapping(value = ApiPaths.CREATE_SEMD_MEDICAL_PRODUCT)
-    public String createMedicalProductPreferentialRecipe(@RequestPart("medicalProductRecipe") @NotNull @Valid MedicalProductRecipe medicalProductRecipe,) {
-        return iemkService.createMedicalProductPreferentialRecipe(medicalProductRecipe);
+    @Operation(summary = "Льготный рецепт на мед. изделие")
+    @PostMapping(ApiPaths.CREATE_SEMD_MEDICAL_PRODUCT)
+    public String createMedicalProductPreferentialRecipe(@RequestBody @Valid @NotNull FullRecipe fullRecipe) {
+        return semdService.createMedicalProductPreferentialRecipe(fullRecipe);
     }
 
-    @PostMapping(value = ApiPaths.CREATE_SEMD_HEALTH_FOOD)
-    public String createHealthFoodPreferentialRecipe(@RequestPart("healthFoodRecipe") @NotNull @Valid HealthFoodRecipe healthFoodRecipe) {
-        return iemkService.createHealthFoodPreferentialRecipe(healthFoodRecipe);
+    @Operation(summary = "Льготный рецепт на специализированный продукт лечебного питания")
+    @PostMapping(ApiPaths.CREATE_SEMD_HEALTH_FOOD)
+    public String createHealthFoodPreferentialRecipe(@RequestBody @Valid @NotNull FullRecipe fullRecipe) {
+        return semdService.createHealthFoodPreferentialRecipe(fullRecipe);
     }
 }

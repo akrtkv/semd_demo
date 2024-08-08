@@ -1,4 +1,4 @@
-package su.medsoft.rir.recipe.dto.egisz.callback;
+package com.github.akrtkv.semd_demo.dto.egisz.callback;
 
 import javax.xml.bind.annotation.XmlAccessType;
 import javax.xml.bind.annotation.XmlAccessorType;
@@ -8,13 +8,13 @@ import javax.xml.bind.annotation.XmlElement;
 public class Errors {
 
     @XmlElement(name = "element")
-    private Error error;
+    private java.lang.Error error;
 
-    public Error getError() {
+    public java.lang.Error getError() {
         return error;
     }
 
-    public void setError(Error error) {
+    public void setError(java.lang.Error error) {
         this.error = error;
     }
 

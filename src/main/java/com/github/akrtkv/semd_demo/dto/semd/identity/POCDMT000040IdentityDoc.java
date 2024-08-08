@@ -7,8 +7,8 @@
 
 package com.github.akrtkv.semd_demo.dto.semd.identity;
 
-import su.medsoft.rir.recipe.dto.iemk_new_edition.CENonElements;
-import su.medsoft.rir.recipe.dto.iemk_new_edition.TS;
+import com.github.akrtkv.semd_demo.dto.semd.CENonElements;
+import com.github.akrtkv.semd_demo.dto.semd.TS;
 
 import javax.xml.bind.annotation.*;
 import java.util.ArrayList;

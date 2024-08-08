@@ -1,10 +1,10 @@
-package su.medsoft.rir.recipe.dto.rir.recipe;
+package com.github.akrtkv.semd_demo.dto.recipe;
 
 import com.fasterxml.jackson.databind.annotation.JsonDeserialize;
 import com.fasterxml.jackson.databind.annotation.JsonSerialize;
+import com.github.akrtkv.semd_demo.util.LocalDateDeserializer;
+import com.github.akrtkv.semd_demo.util.LocalDateSerializer;
 import io.swagger.v3.oas.annotations.media.Schema;
-import su.medsoft.rir.recipe.utils.LocalDateDeserializer;
-import su.medsoft.rir.recipe.utils.LocalDateSerializer;
 
 import java.time.LocalDate;
 

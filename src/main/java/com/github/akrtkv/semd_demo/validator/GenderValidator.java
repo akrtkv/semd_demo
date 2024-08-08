@@ -1,10 +1,10 @@
-package su.medsoft.rir.recipe.validator;
+package com.github.akrtkv.semd_demo.validator;
 
+import jakarta.validation.ConstraintValidator;
+import jakarta.validation.ConstraintValidatorContext;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.context.MessageSource;
 
-import javax.validation.ConstraintValidator;
-import javax.validation.ConstraintValidatorContext;
 import java.util.Locale;
 
 public class GenderValidator implements ConstraintValidator<Gender, String> {

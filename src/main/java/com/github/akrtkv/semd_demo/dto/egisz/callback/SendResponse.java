@@ -1,4 +1,4 @@
-package su.medsoft.rir.recipe.dto.egisz.callback;
+package com.github.akrtkv.semd_demo.dto.egisz.callback;
 
 import javax.xml.bind.annotation.*;
 

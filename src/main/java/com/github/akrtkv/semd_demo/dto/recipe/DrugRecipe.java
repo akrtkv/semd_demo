@@ -1,11 +1,11 @@
-package su.medsoft.rir.recipe.dto.rir.recipe;
+package com.github.akrtkv.semd_demo.dto.recipe;
 
+import com.github.akrtkv.semd_demo.validator.NotNullIfAnotherFieldFilled;
+import com.github.akrtkv.semd_demo.validator.NotNullIfAnotherFieldNull;
 import io.swagger.v3.oas.annotations.media.Schema;
-import su.medsoft.rir.recipe.validator.NotNullIfAnotherFieldFilled;
-import su.medsoft.rir.recipe.validator.NotNullIfAnotherFieldNull;
+import jakarta.validation.Valid;
+import jakarta.validation.constraints.Size;
 
-import javax.validation.Valid;
-import javax.validation.constraints.Size;
 import java.util.List;
 
 @NotNullIfAnotherFieldNull(fieldName = "drug", dependFieldName = "drugs")
@@ -44,13 +44,5 @@ public class DrugRecipe extends Recipe {
 
     public void setDrugs(List<Drug> drugs) {
         this.drugs = drugs;
-    }
-
-    @Override
-    public String toString() {
-        return "DrugRecipe{" +
-                "drug=" + drug +
-                ", drugs=" + drugs +
-                '}';
     }
 }

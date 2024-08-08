@@ -1,10 +1,9 @@
-package su.medsoft.rir.recipe.dto.rir;
+package com.github.akrtkv.semd_demo.dto;
 
 import io.swagger.v3.oas.annotations.media.Schema;
-
-import javax.validation.Valid;
-import javax.validation.constraints.NotEmpty;
-import javax.validation.constraints.NotNull;
+import jakarta.validation.Valid;
+import jakarta.validation.constraints.NotEmpty;
+import jakarta.validation.constraints.NotNull;
 
 public class Insurance {
 
@@ -41,14 +40,5 @@ public class Insurance {
 
     public void setInsuranceOrganisation(InsuranceOrganisation insuranceOrganisation) {
         this.insuranceOrganisation = insuranceOrganisation;
-    }
-
-    @Override
-    public String toString() {
-        return "Insurance{" +
-                "id=" + id +
-                ", number='" + number + '\'' +
-                ", insuranceOrganisation=" + insuranceOrganisation +
-                '}';
     }
 }

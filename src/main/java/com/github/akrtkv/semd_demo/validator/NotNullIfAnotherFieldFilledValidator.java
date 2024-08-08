@@ -1,13 +1,13 @@
-package su.medsoft.rir.recipe.validator;
+package com.github.akrtkv.semd_demo.validator;
 
+import com.github.akrtkv.semd_demo.exception.ValidatorException;
+import jakarta.validation.ConstraintValidator;
+import jakarta.validation.ConstraintValidatorContext;
 import org.apache.commons.beanutils.BeanUtils;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.context.MessageSource;
 import org.springframework.stereotype.Component;
-import su.medsoft.rir.recipe.exception.ValidatorException;
 
-import javax.validation.ConstraintValidator;
-import javax.validation.ConstraintValidatorContext;
 import java.lang.reflect.InvocationTargetException;
 import java.util.Locale;
 

@@ -1,8 +1,9 @@
-package su.medsoft.rir.recipe.dto.rir.recipe;
+package com.github.akrtkv.semd_demo.dto.recipe;
 
-import javax.validation.Valid;
-import javax.validation.constraints.NotEmpty;
-import javax.validation.constraints.NotNull;
+import jakarta.validation.Valid;
+import jakarta.validation.constraints.NotEmpty;
+import jakarta.validation.constraints.NotNull;
+
 import java.util.Objects;
 
 public class DrugRecipeDocument {
@@ -41,12 +42,5 @@ public class DrugRecipeDocument {
     @Override
     public int hashCode() {
         return Objects.hash(drugRecipe);
-    }
-
-    @Override
-    public String toString() {
-        return "DrugRecipeDocument{" +
-                "drugRecipe=" + drugRecipe +
-                '}';
     }
 }

@@ -6,4 +6,4 @@
 //
 
 @javax.xml.bind.annotation.XmlSchema(namespace = "http://emu.callback.mis.service.nr.eu.rt.ru/")
-package su.medsoft.rir.recipe.dto.egisz.callback;
+package com.github.akrtkv.semd_demo.dto.egisz.callback;

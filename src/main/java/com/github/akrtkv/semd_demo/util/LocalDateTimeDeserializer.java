@@ -1,4 +1,4 @@
-package su.medsoft.rir.recipe.utils;
+package com.github.akrtkv.semd_demo.util;
 
 import com.fasterxml.jackson.core.JsonParser;
 import com.fasterxml.jackson.databind.DeserializationContext;
@@ -9,7 +9,7 @@ import java.time.LocalDateTime;
 import java.time.format.DateTimeFormatter;
 import java.util.Locale;
 
-import static su.medsoft.rir.recipe.utils.Constants.LOCAL_DATE_TIME_FORMAT;
+import static com.github.akrtkv.semd_demo.util.Constants.LOCAL_DATE_TIME_FORMAT;
 
 public class LocalDateTimeDeserializer extends StdDeserializer<LocalDateTime> {
 

@@ -1,4 +1,4 @@
-package su.medsoft.rir.recipe.utils;
+package com.github.akrtkv.semd_demo.util;
 
 import com.sun.xml.bind.marshaller.NamespacePrefixMapper;
 import org.springframework.stereotype.Component;

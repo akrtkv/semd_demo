@@ -7,7 +7,7 @@
 
 package com.github.akrtkv.semd_demo.dto.semd;
 
-import su.medsoft.rir.recipe.dto.iemk_new_edition.identity.POCDMT000040DocInfo;
+import com.github.akrtkv.semd_demo.dto.semd.identity.POCDMT000040DocInfo;
 
 import javax.xml.bind.annotation.*;
 

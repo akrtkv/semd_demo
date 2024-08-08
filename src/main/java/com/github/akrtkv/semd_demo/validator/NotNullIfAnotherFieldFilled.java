@@ -1,7 +1,8 @@
-package su.medsoft.rir.recipe.validator;
+package com.github.akrtkv.semd_demo.validator;
 
-import javax.validation.Constraint;
-import javax.validation.Payload;
+import jakarta.validation.Constraint;
+import jakarta.validation.Payload;
+
 import java.lang.annotation.Documented;
 import java.lang.annotation.Repeatable;
 import java.lang.annotation.Retention;

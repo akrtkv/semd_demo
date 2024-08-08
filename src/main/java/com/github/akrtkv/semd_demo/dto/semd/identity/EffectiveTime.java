@@ -7,7 +7,7 @@
 
 package com.github.akrtkv.semd_demo.dto.semd.identity;
 
-import su.medsoft.rir.recipe.dto.iemk_new_edition.IVXBTS;
+import com.github.akrtkv.semd_demo.dto.semd.IVXBTS;
 
 import javax.xml.bind.annotation.XmlAccessType;
 import javax.xml.bind.annotation.XmlAccessorType;

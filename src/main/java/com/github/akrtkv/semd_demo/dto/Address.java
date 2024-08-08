@@ -1,8 +1,7 @@
-package su.medsoft.rir.recipe.dto.rir;
+package com.github.akrtkv.semd_demo.dto;
 
 import io.swagger.v3.oas.annotations.media.Schema;
-
-import javax.validation.constraints.NotEmpty;
+import jakarta.validation.constraints.NotEmpty;
 
 public class Address {
 
@@ -72,17 +71,5 @@ public class Address {
 
     public void setHouseGuid(String houseGuid) {
         this.houseGuid = houseGuid;
-    }
-
-    @Override
-    public String toString() {
-        return "Address{" +
-                "id=" + id +
-                ", fullAddress='" + fullAddress + '\'' +
-                ", regionCode='" + regionCode + '\'' +
-                ", regionName='" + regionName + '\'' +
-                ", aoGuid='" + aoGuid + '\'' +
-                ", houseGuid='" + houseGuid + '\'' +
-                '}';
     }
 }

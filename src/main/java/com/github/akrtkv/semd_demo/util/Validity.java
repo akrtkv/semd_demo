@@ -1,4 +1,4 @@
-package su.medsoft.rir.recipe.dto.rir;
+package com.github.akrtkv.semd_demo.util;
 
 import java.util.Arrays;
 

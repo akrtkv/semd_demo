@@ -1,4 +1,4 @@
-package su.medsoft.rir.recipe.utils;
+package com.github.akrtkv.semd_demo.util;
 
 import com.fasterxml.jackson.core.JsonParser;
 import com.fasterxml.jackson.databind.DeserializationContext;
@@ -8,7 +8,7 @@ import java.io.IOException;
 import java.time.ZonedDateTime;
 import java.time.format.DateTimeFormatter;
 
-import static su.medsoft.rir.recipe.utils.Constants.ZONED_DATE_TIME_FORMAT;
+import static com.github.akrtkv.semd_demo.util.Constants.ZONED_DATE_TIME_FORMAT;
 
 public class ZonedDateTimeDeserializer extends StdDeserializer<ZonedDateTime> {
 

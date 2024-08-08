@@ -1,4 +1,4 @@
-package su.medsoft.rir.recipe.utils;
+package com.github.akrtkv.semd_demo.util;
 
 public class Constants {
 

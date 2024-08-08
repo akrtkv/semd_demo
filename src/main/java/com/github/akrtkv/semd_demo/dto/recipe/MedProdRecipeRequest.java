@@ -1,7 +1,8 @@
-package su.medsoft.rir.recipe.dto.rir.recipe;
+package com.github.akrtkv.semd_demo.dto.recipe;
 
-import javax.validation.Valid;
-import javax.validation.constraints.NotNull;
+import jakarta.validation.Valid;
+import jakarta.validation.constraints.NotNull;
+
 import java.util.List;
 
 public class MedProdRecipeRequest {
@@ -15,12 +16,5 @@ public class MedProdRecipeRequest {
 
     public void setMedProdRecipeDocuments(List<MedProdRecipeDocument> medProdRecipeDocuments) {
         this.medProdRecipeDocuments = medProdRecipeDocuments;
-    }
-
-    @Override
-    public String toString() {
-        return "MedProdRecipeRequest{" +
-                "medProdRecipeDocuments=" + medProdRecipeDocuments +
-                '}';
     }
 }

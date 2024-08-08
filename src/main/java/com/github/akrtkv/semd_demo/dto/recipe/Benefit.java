@@ -1,9 +1,8 @@
-package su.medsoft.rir.recipe.dto.rir.recipe;
+package com.github.akrtkv.semd_demo.dto.recipe;
 
 import io.swagger.v3.oas.annotations.media.Schema;
-
-import javax.validation.constraints.NotEmpty;
-import javax.validation.constraints.NotNull;
+import jakarta.validation.constraints.NotEmpty;
+import jakarta.validation.constraints.NotNull;
 
 public class Benefit {
 
@@ -107,20 +106,5 @@ public class Benefit {
 
     public void setPercent(String percent) {
         this.percent = percent;
-    }
-
-    @Override
-    public String toString() {
-        return "Benefit{" +
-                "id=" + id +
-                ", typeCode=" + typeCode +
-                ", typeName='" + typeName + '\'' +
-                ", code='" + code + '\'' +
-                ", name='" + name + '\'' +
-                ", regionCode='" + regionCode + '\'' +
-                ", regionName='" + regionName + '\'' +
-                ", amount='" + amount + '\'' +
-                ", percent='" + percent + '\'' +
-                '}';
     }
 }

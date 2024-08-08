@@ -1,16 +1,16 @@
-package su.medsoft.rir.recipe.dto.rir.recipe;
+package com.github.akrtkv.semd_demo.dto.recipe;
 
 import com.fasterxml.jackson.annotation.JsonFormat;
 import com.fasterxml.jackson.databind.annotation.JsonDeserialize;
 import com.fasterxml.jackson.databind.annotation.JsonSerialize;
+import com.github.akrtkv.semd_demo.dto.Patient;
+import com.github.akrtkv.semd_demo.util.ZonedDateTimeDeserializer;
+import com.github.akrtkv.semd_demo.util.ZonedDateTimeSerializer;
 import io.swagger.v3.oas.annotations.media.Schema;
-import su.medsoft.rir.recipe.dto.rir.Patient;
-import su.medsoft.rir.recipe.utils.ZonedDateTimeDeserializer;
-import su.medsoft.rir.recipe.utils.ZonedDateTimeSerializer;
+import jakarta.validation.Valid;
+import jakarta.validation.constraints.NotEmpty;
+import jakarta.validation.constraints.NotNull;
 
-import javax.validation.Valid;
-import javax.validation.constraints.NotEmpty;
-import javax.validation.constraints.NotNull;
 import java.time.LocalDate;
 import java.time.ZonedDateTime;
 import java.util.Objects;
@@ -366,37 +366,6 @@ public class Recipe {
 
     public void setFrlloData(FrlloData frlloData) {
         this.frlloData = frlloData;
-    }
-
-    @Override
-    public String toString() {
-        return "Recipe{" +
-                "id=" + id +
-                ", misId=" + misId +
-                ", name='" + name + '\'' +
-                ", createDate=" + createDate +
-                ", versionId=" + versionId +
-                ", versionNumber=" + versionNumber +
-                ", patient=" + patient +
-                ", providerOrganization=" + providerOrganization +
-                ", signatureDate=" + signatureDate +
-                ", author=" + author +
-                ", custodianOrganisation=" + custodianOrganisation +
-                ", legalAuthenticatorSignatureDate=" + legalAuthenticatorSignatureDate +
-                ", legalAuthenticator=" + legalAuthenticator +
-                ", medicalCareCase=" + medicalCareCase +
-                ", series='" + series + '\'' +
-                ", number='" + number + '\'' +
-                ", priority='" + priority + '\'' +
-                ", medicalCommissionProtocol=" + medicalCommissionProtocol +
-                ", validity='" + validity + '\'' +
-                ", endDate=" + endDate +
-                ", special=" + special +
-                ", chronicDisease=" + chronicDisease +
-                ", mkb=" + mkb +
-                ", financing=" + financing +
-                ", benefit=" + benefit +
-                '}';
     }
 
     @Override

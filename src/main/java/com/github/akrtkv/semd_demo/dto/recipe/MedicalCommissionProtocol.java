@@ -1,13 +1,13 @@
-package su.medsoft.rir.recipe.dto.rir.recipe;
+package com.github.akrtkv.semd_demo.dto.recipe;
 
 import com.fasterxml.jackson.databind.annotation.JsonDeserialize;
 import com.fasterxml.jackson.databind.annotation.JsonSerialize;
+import com.github.akrtkv.semd_demo.util.ZonedDateTimeDeserializer;
+import com.github.akrtkv.semd_demo.util.ZonedDateTimeSerializer;
 import io.swagger.v3.oas.annotations.media.Schema;
-import su.medsoft.rir.recipe.utils.ZonedDateTimeDeserializer;
-import su.medsoft.rir.recipe.utils.ZonedDateTimeSerializer;
+import jakarta.validation.constraints.NotEmpty;
+import jakarta.validation.constraints.NotNull;
 
-import javax.validation.constraints.NotEmpty;
-import javax.validation.constraints.NotNull;
 import java.time.ZonedDateTime;
 
 public class MedicalCommissionProtocol {
@@ -45,14 +45,5 @@ public class MedicalCommissionProtocol {
 
     public void setDate(ZonedDateTime date) {
         this.date = date;
-    }
-
-    @Override
-    public String toString() {
-        return "MedicalCommissionProtocol{" +
-                "id=" + id +
-                ", number='" + number + '\'' +
-                ", date=" + date +
-                '}';
     }
 }

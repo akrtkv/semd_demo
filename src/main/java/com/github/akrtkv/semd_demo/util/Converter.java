@@ -1,10 +1,10 @@
-package su.medsoft.rir.recipe.utils;
+package com.github.akrtkv.semd_demo.util;
 
+import com.github.akrtkv.semd_demo.dto.egisz.callback.Result;
+import com.github.akrtkv.semd_demo.dto.egisz.callback.Root;
+import com.github.akrtkv.semd_demo.exception.ConverterException;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Component;
-import su.medsoft.rir.recipe.dto.egisz.callback.Result;
-import su.medsoft.rir.recipe.dto.egisz.callback.Root;
-import su.medsoft.rir.recipe.exception.ConverterException;
 
 import javax.xml.bind.JAXBContext;
 import javax.xml.bind.JAXBException;
@@ -19,12 +19,12 @@ public class Converter {
 
     private final FrLLoNamespaceMapper frLLoNamespaceMapper;
 
-    private final IemkNamespaceMapper iemkNamespaceMapper;
+    private final SemdNamespaceMapper semdNamespaceMapper;
 
     @Autowired
-    public Converter(FrLLoNamespaceMapper frLLoNamespaceMapper, IemkNamespaceMapper iemkNamespaceMapper) {
+    public Converter(FrLLoNamespaceMapper frLLoNamespaceMapper, SemdNamespaceMapper semdNamespaceMapper) {
         this.frLLoNamespaceMapper = frLLoNamespaceMapper;
-        this.iemkNamespaceMapper = iemkNamespaceMapper;
+        this.semdNamespaceMapper = semdNamespaceMapper;
     }
 
     public <T> T deserialize(String xmlString, Class<T> classForSerialize) {
@@ -46,7 +46,7 @@ public class Converter {
             jaxbMarshaller.setProperty(Marshaller.JAXB_FORMATTED_OUTPUT, true);
             if (iemk) {
                 jaxbMarshaller.setProperty("com.sun.xml.bind.xmlHeaders", "<?xml-stylesheet type=\"text/xsl\" href=\"Electronic_prescription.xsl\"?>");
-                jaxbMarshaller.setProperty("com.sun.xml.bind.namespacePrefixMapper", iemkNamespaceMapper);
+                jaxbMarshaller.setProperty("com.sun.xml.bind.namespacePrefixMapper", semdNamespaceMapper);
             } else {
                 jaxbMarshaller.setProperty(Marshaller.JAXB_FRAGMENT, true);
                 jaxbMarshaller.setProperty("com.sun.xml.bind.namespacePrefixMapper", frLLoNamespaceMapper);

@@ -1,4 +1,4 @@
-package su.medsoft.rir.recipe.exception;
+package com.github.akrtkv.semd_demo.exception;
 
 public class ValidatorException extends RuntimeException {
 

@@ -1,9 +1,8 @@
-package su.medsoft.rir.recipe.dto.rir.recipe;
+package com.github.akrtkv.semd_demo.dto.recipe;
 
 import io.swagger.v3.oas.annotations.media.Schema;
-
-import javax.validation.Valid;
-import javax.validation.constraints.NotNull;
+import jakarta.validation.Valid;
+import jakarta.validation.constraints.NotNull;
 
 public class HealthFoodRecipe extends Recipe {
 
@@ -18,12 +17,5 @@ public class HealthFoodRecipe extends Recipe {
 
     public void setHealthFood(HealthFood healthFood) {
         this.healthFood = healthFood;
-    }
-
-    @Override
-    public String toString() {
-        return "HealthFoodRecipe{" +
-                "healthFood=" + healthFood +
-                '}';
     }
 }

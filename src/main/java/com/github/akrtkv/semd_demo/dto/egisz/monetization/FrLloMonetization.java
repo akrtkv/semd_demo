@@ -5,7 +5,7 @@
 // Generated on: 2021.08.31 at 03:51:03 PM MSK
 //
 
-package su.medsoft.rir.recipe.dto.egisz.monetization;
+package com.github.akrtkv.semd_demo.dto.egisz.monetization;
 
 import javax.xml.bind.annotation.*;
 import javax.xml.datatype.XMLGregorianCalendar;

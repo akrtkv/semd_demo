@@ -1,6 +1,6 @@
-package su.medsoft.rir.recipe.dto.egisz.recipe;
+package com.github.akrtkv.semd_demo.dto.egisz.recipe;
 
-import su.medsoft.rir.recipe.dto.egisz.release.FrLloRelease;
+import com.github.akrtkv.semd_demo.dto.egisz.release.FrLloRelease;
 
 import javax.xml.bind.annotation.*;
 import javax.xml.datatype.XMLGregorianCalendar;

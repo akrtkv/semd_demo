@@ -1,13 +1,13 @@
-package su.medsoft.rir.recipe.dto.rir;
+package com.github.akrtkv.semd_demo.dto;
 
 import com.fasterxml.jackson.annotation.JsonFormat;
+import com.github.akrtkv.semd_demo.validator.Gender;
 import io.swagger.v3.oas.annotations.media.Schema;
-import su.medsoft.rir.recipe.validator.Gender;
+import jakarta.validation.Valid;
+import jakarta.validation.constraints.NotEmpty;
+import jakarta.validation.constraints.NotNull;
+import jakarta.validation.constraints.Pattern;
 
-import javax.validation.Valid;
-import javax.validation.constraints.NotEmpty;
-import javax.validation.constraints.NotNull;
-import javax.validation.constraints.Pattern;
 import java.time.LocalDate;
 
 public class Patient {
@@ -136,22 +136,5 @@ public class Patient {
 
     public void setAddress(Address address) {
         this.address = address;
-    }
-
-    @Override
-    public String toString() {
-        return "Patient{" +
-                "id=" + id +
-                ", misId='" + misId + '\'' +
-                ", lastName='" + lastName + '\'' +
-                ", firstName='" + firstName + '\'' +
-                ", middleName='" + middleName + '\'' +
-                ", birthDate=" + birthDate +
-                ", gender='" + gender + '\'' +
-                ", snils='" + snils + '\'' +
-                ", insurance=" + insurance +
-                ", identityDoc=" + identityDoc +
-                ", address=" + address +
-                '}';
     }
 }
